@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1><u>JAVASCRIPT</u></h1></center>
+    <center><h1>VARIABLES</h1></center>
+    <center><h1>DATATYPES</h1></center>
+    <center> <h2>Inspect  the document head to console to see the values that got printed using javascript. </h2></center>
+
+    <script>
+    // primitive datatype  example  
+   var a="vinnie";
+   // now creating copy
+    var b=a;
+    console.log(b); 
+     // changing the var b(copy) value
+    var b="reddy"; 
+    console.log(b);//="reddy"
+    console.log(a);//"vinnie"
+    
+    // only the copy variable value will change but not the original parent var value
+
+
+// non-primitive datatype  example
+    
+
+var a=["vinnie",1,2,3];
+// now creating copy
+var b=a;
+console.log(a);
+// changing the var b(copy) value 
+ b[0]="reddy";
+ b[1]=2;
+console.log(b);//["reddy",2,2,3]
+console.log(a);//["reddy",2,2,3]
+// both the parent variable and the copied values will change 
+
+
+// object is a datatype in which we get values by using keys
+// syntax=key:value,
+//        key:value,
+//        key:value,
+// print "vinnie" as name (key)
+// print 123 as rollnumber(key)
+// print "d-section" as section(key)
+
+
+var obj={
+    name:"vinnie",
+    id:123,
+    section:"d-section"
+
+}
+console.log(obj.name);
+// console.log(typeof(name));
+console.log(obj.id);
+
+// for suppose the key got any space between or for example
+// key="ur name"
+// key="ur id"
+// key="ur section" 
+// then we use console.log(obj[]); that is watch below
+var obj={
+"ur name":"vinnie",
+"ur id":123,
+"ur class":"b-sec"
+
+}
+// console.log(obj.);here dot doesnt wrok bcz the key has space so we use console.log(obj[])
+console.log(obj["ur name"]);
+console.log(obj["ur id"]);
+console.log(obj["ur class"]);
+
+ var v;
+ console.log(v);
+
+ var v=null;
+ console.log(v);
+
+
+
+
+
+
+
+
+    </script>
+   
+</body>
+</html>
